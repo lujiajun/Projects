@@ -1,0 +1,10 @@
+changes in the CSS. 
+
+main : 
+#quoteSlider ol.carousel-indicators -> removed top
+a.btn-custom, input.btn-custom {float:right;
+added /* Sign in */ section
+
+bootstrap:
+.carousel-indicators{position:absolute;top:0px;
+.carousel-inner{margin-left: 15px; margin-top:15px;
