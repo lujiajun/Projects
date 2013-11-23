@@ -1,0 +1,152 @@
+/*
+	navigation bar fixes
+*/
+.navbar-brand {
+	display:inline-block !important;
+	float: none !important;
+}
+
+.navbar-header {
+	text-align: center;
+}
+
+.nav-pull-left {
+	position: absolute;
+	left: 0;
+}
+
+.nav-pull-right {
+	position: absolute;
+	right: 0;
+}
+
+/*
+	Footer navigation bar
+*/
+.footer-tab {
+	padding:15px;
+	text-align: center;
+}
+
+
+/*
+	overall styles
+*/
+
+section.content {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+
+.container-full {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/*
+	My Goals View
+*/
+.control-box {
+	background-color: #ccc;
+}
+
+.counter {
+	margin-top: 50px;
+}
+
+.hexagon {
+	width: 45px;
+	height: 27.5px;
+	background: #E43F3B;
+	position: relative;
+	margin-left: 1px;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -12.5px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22.5px solid transparent;
+	border-right: 22.5px solid transparent;
+	border-bottom: 12.5px solid #E43F3B;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -12.5px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 22.5px solid transparent;
+	border-right: 22.5px solid transparent;
+	border-top: 12.5px solid #E43F3B;
+}
+
+.goal-desc {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 12px;
+}
+
+/*
+	search feature
+*/
+
+.searchbar {
+	padding: 3px 15px;
+	background: #EEE;
+}
+
+.searchbar input {
+	border-radius: 10px;
+	text-align: center;
+}
+
+.searchbar form {
+	position: relative;
+}
+
+.searchbar .controls:before {
+	top: 0.5em;
+	left: 0.5em;
+	position: absolute;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	content: "\f002";
+}
+
+/*
+	Community View
+*/
+
+.newscard {
+	padding: 0.5em 0.5em;
+	background-color: #ccc;
+}
+
+.newscard .info {
+	background-color: white;
+	border-radius: 5px;
+	padding:0.5em;
+}
+
+.newscard .info img{
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+/*.newscard .info .comment {
+	padding: 1em;
+}*/
