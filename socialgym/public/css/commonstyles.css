@@ -70,7 +70,7 @@ section.content {
 .hexagon:before {
 	content: "";
 	position: absolute;
-	top: -12.5px;
+	top: -12px;
 	left: 0;
 	width: 0;
 	height: 0;
@@ -81,7 +81,7 @@ section.content {
 .hexagon:after {
 	content: "";
 	position: absolute;
-	bottom: -12.5px;
+	bottom: -12px;
 	left: 0;
 	width: 0;
 	height: 0;
@@ -94,6 +94,8 @@ section.content {
 	margin-top: 12px;
 	text-align: center;
 	font-size: 12px;
+	margin-right: 215px;
+	padding-bottom: 50px;
 }
 
 /*
@@ -150,3 +152,13 @@ section.content {
 /*.newscard .info .comment {
 	padding: 1em;
 }*/
+
+/*Settings View */
+
+.setting h3 {
+	margin-left: 50px;
+}
+
+#finalSettings {
+	text-align: center;
+}
