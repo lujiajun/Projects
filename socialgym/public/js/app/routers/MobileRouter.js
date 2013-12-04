@@ -1,8 +1,8 @@
 // MobileRouter.js
 // ---------------
-define(["jquery", "backbone", "views/BaseView", "views/MyGoalView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
+define(["jquery", "backbone", "views/BaseView", "views/MyGoalView","views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
         
-    function($, Backbone, BaseView, MyGoalView, CommunityView, EventsView, SettingsView, ActivityView) {
+    function($, Backbone, BaseView, MyGoalView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
 
         var MobileRouter = Backbone.Router.extend({
 
@@ -19,6 +19,7 @@ define(["jquery", "backbone", "views/BaseView", "views/MyGoalView", "views/Commu
                 // When there is no hash bang on the url, the home method is called
                 "": "index",
                 "myGoal":"myGoal",
+                "detail":"detail",
                 "community":"community",
                 "events":"events",
 				"settings":"settings",
@@ -33,6 +34,9 @@ define(["jquery", "backbone", "views/BaseView", "views/MyGoalView", "views/Commu
             },
             myGoal: function() {
                 this.changePage(new MyGoalView());
+            },
+            detail: function() {
+                this.changePage(new DetailView());
             },
             community: function() {
                 this.changePage(new CommunityView());

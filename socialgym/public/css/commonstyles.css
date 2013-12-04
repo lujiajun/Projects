@@ -110,6 +110,16 @@ section.content {
 	padding-bottom: 50px;
 }
 
+.goal-list {background-color:salmon; height: 250px;
+border-top-width:2px;   border-top-color: white; border-top-style: solid;
+}
+
+.middleBar {background-color:salmon; height: 50px;
+border-top-width:1px;   border-top-color: white; border-top-style: solid;
+border-bottom-width:1px;   border-bottom-color: white; border-bottom-style: solid;
+}
+
+.middleBar p {color:white; font-size:0.8em; padding-top:1em;}
 /*
 	search feature
 */
@@ -180,7 +190,7 @@ section.content {
 	width: 93vw; height:50px; 
 	padding-top: 1em; 
 	margin-left: 1em;
-	border-bottom-width:1px;   border-bottom-color: white;    border-bottom-style: solid;
+	border-bottom-width:1px; border-bottom-color: white; border-bottom-style: solid;
 	border-top-width:1px;   border-top-color: white; border-top-style: solid;
 }
 
