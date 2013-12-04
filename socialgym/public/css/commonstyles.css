@@ -73,35 +73,6 @@ section.content {
 
 .square p {position:absolute; padding-top:32px; padding-left: 10px;}
 
-.hexagon {
-	width: 45px;
-	height: 27.5px;
-	background: #E43F3B;
-	position: relative;
-	margin-left: 1px;
-}
-.hexagon:before {
-	content: "";
-	position: absolute;
-	top: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22.5px solid transparent;
-	border-right: 22.5px solid transparent;
-	border-bottom: 12.5px solid #E43F3B;
-}
-.hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22.5px solid transparent;
-	border-right: 22.5px solid transparent;
-	border-top: 12.5px solid #E43F3B;
-}
 
 .goal-desc {
 	text-align: center;
@@ -196,4 +167,9 @@ border-bottom-width:1px;   border-bottom-color: white; border-bottom-style: soli
 
 #finalSettings {
 	text-align: center;
+}
+
+/* Events - detail*/
+.date {border-width:1px; border-style:solid;
+margin-left:30px; padding: 1em 0; font-size:0.8em;
 }
