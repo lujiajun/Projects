@@ -48,6 +48,9 @@ section.content {
 	text-align: center;
 }
 
+.right{
+	text-align: right;
+}
 
 /*
 	My Goals View
@@ -59,6 +62,16 @@ section.content {
 .counter {
 	margin-top: 50px;
 }
+
+.square {
+	width: 100px;
+	height: 100px;
+	position:relative;
+}
+
+.square:hover {	background: #E43F3B;}
+
+.square p {position:absolute; padding-top:32px; padding-left: 10px;}
 
 .hexagon {
 	width: 45px;
@@ -91,7 +104,6 @@ section.content {
 }
 
 .goal-desc {
-	margin-top: 12px;
 	text-align: center;
 	font-size: 12px;
 	margin-right: 215px;
@@ -155,8 +167,21 @@ section.content {
 
 /*Settings View */
 
-.setting h3 {
-	margin-left: 50px;
+.setting #sub {
+	color: #B5C7D6;
+	width: 80vw; height:50px; 
+	padding-top: 1em; 
+	margin-left: 3em; 
+	border-bottom-width:1px;   border-bottom-color: white;    border-bottom-style: solid;
+}
+
+.setting #logout {
+	color: #B5C7D6;
+	width: 93vw; height:50px; 
+	padding-top: 1em; 
+	margin-left: 1em;
+	border-bottom-width:1px;   border-bottom-color: white;    border-bottom-style: solid;
+	border-top-width:1px;   border-top-color: white; border-top-style: solid;
 }
 
 #finalSettings {

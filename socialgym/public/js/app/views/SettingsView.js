@@ -1,6 +1,6 @@
 // SettingView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/setting.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/settings.html"],
 
     function($, Backbone, Model, template){
 
