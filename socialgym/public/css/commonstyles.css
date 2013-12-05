@@ -91,6 +91,11 @@ border-bottom-width:1px;   border-bottom-color: white; border-bottom-style: soli
 }
 
 .middleBar p {color:white; font-size:0.8em; padding-top:1em;}
+
+.borderbox {color:white; font-size: 0.8em; border-style: solid; 
+	border-color: white; color:gray; margin:10px 43px; height:2.5em;}
+
+.borderbox p { color:white; padding: 0.5em 0}
 /*
 	search feature
 */
