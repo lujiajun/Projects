@@ -8,6 +8,14 @@
 
 .navbar-header {
 	text-align: center;
+	background-color: #6589a3;
+	color: #ffffff;
+}
+
+.navbar-footer {
+	text-align: center;
+	background-color: #6589a3;
+	color: #ffffff;
 }
 
 .nav-pull-left {
@@ -32,6 +40,11 @@
 /*
 	overall styles
 */
+
+body {
+	color: #6589a3;
+
+}
 
 section.content {
 	margin-top: 50px;
@@ -64,12 +77,18 @@ section.content {
 }
 
 .square {
-	width: 100px;
+	margin-top: 10px;
+	width: 100%;
 	height: 100px;
 	position:relative;
 }
 
-.square:hover {	background: #E43F3B;}
+.col-xs-3 {
+	padding-left: 5px;	
+	padding-right: 5px;
+}
+
+.square:hover {	background: #204C6B;}
 
 .square p {position:absolute; padding-top:32px; padding-left: 10px;}
 
@@ -81,13 +100,23 @@ section.content {
 	padding-bottom: 50px;
 }
 
-.goal-list {background-color:salmon; height: 250px;
-border-top-width:2px;   border-top-color: white; border-top-style: solid;
+.goal-list {
+	background-color:#6589a3; 
+	height: 250px;
+	border-top-width:1px;
+	border-top-color: #A5BFD1; 
+	border-top-style: solid;
 }
 
-.middleBar {background-color:salmon; height: 50px;
-border-top-width:1px;   border-top-color: white; border-top-style: solid;
-border-bottom-width:1px;   border-bottom-color: white; border-bottom-style: solid;
+.middleBar {
+	background-color:#6589a3; 
+	height: 50px;
+	border-top-width:1px;   
+	border-top-color: white; 
+	border-top-style: solid;
+	border-bottom-width:1px;   
+	border-bottom-color: white; 
+	border-bottom-style: solid;
 }
 
 .middleBar p {color:white; font-size:0.8em; padding-top:1em;}
@@ -140,6 +169,7 @@ border-bottom-width:1px;   border-bottom-color: white; border-bottom-style: soli
 	background-color: white;
 	border-radius: 5px;
 	padding:0.5em;
+	color: #ffffff
 }
 
 .newscard .info img{
