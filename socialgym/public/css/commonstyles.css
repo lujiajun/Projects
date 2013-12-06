@@ -1,6 +1,9 @@
 /*
 	navigation bar fixes
 */
+.navbar-fixed-bottom {
+	border-width: 0 0 0px;
+}
 
 .navbar-fixed-top {
 	border-width: 0 0 0px;
