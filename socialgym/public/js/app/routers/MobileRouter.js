@@ -1,8 +1,8 @@
 // MobileRouter.js
 // ---------------
-define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/MyGoalView","views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
+define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
         
-    function($, Backbone, BaseView, ModalsView, MyGoalView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
+    function($, Backbone, BaseView, ModalsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
 
         var MobileRouter = Backbone.Router.extend({
 
@@ -20,6 +20,8 @@ define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/MyGoal
                 "": "index",
                 "modals":"modals",
                 "myGoal":"myGoal",
+				"addGoal":"addGoal",
+				"addProgress":"addProgress",
                 "detail":"detail",
                 "community":"community",
                 "events":"events",
@@ -38,6 +40,12 @@ define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/MyGoal
             },
             myGoal: function() {
                 this.changePage(new MyGoalView());
+            },
+			addGoal: function() {
+                this.changePage(new AddGoalView());
+            },
+			addProgress: function() {
+                this.changePage(new AddProgressView());
             },
             detail: function() {
                 this.changePage(new DetailView());
