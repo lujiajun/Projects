@@ -2,6 +2,10 @@
 	navigation bar fixes
 */
 
+.navbar-fixed-top {
+	border-width: 0 0 0px;
+}
+
 .navbar-inverse .navbar-brand {
   color: white;
 }
