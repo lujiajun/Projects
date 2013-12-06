@@ -17,24 +17,26 @@
 
 .navbar-header {
 	text-align: center;
-	background-color: #6589a3;
 	color: #ffffff;
+	background-color: #638AA5;
 }
 
 .navbar-footer {
 	text-align: center;
-/*	background-color: #6589a3; */
 	color: #ffffff;
+	background-color: #638AA5;
 }
 
 .nav-pull-left {
 	position: absolute;
 	left: 0;
+	background-color: #6589a3;
 }
 
 .nav-pull-right {
 	position: absolute;
 	right: 0;
+	background-color: #6589a3;
 }
 
 /*
