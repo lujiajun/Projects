@@ -1,6 +1,6 @@
-// EventsView.js
+// FriendsView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/friends.html"],
 
     function($, Backbone, Model, template){
 
