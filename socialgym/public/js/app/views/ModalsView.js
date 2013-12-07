@@ -1,6 +1,6 @@
 // ModalsView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/addGoal.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/goalMenu.html"],
 
     function($, Backbone, Model, template){
 
