@@ -1,8 +1,8 @@
 // MobileRouter.js
 // ---------------
-define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
+define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
         
-    function($, Backbone, BaseView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
+    function($, Backbone, BaseView, ProgressView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
 
         var MobileRouter = Backbone.Router.extend({
 
@@ -19,6 +19,7 @@ define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/Friend
                 // When there is no hash bang on the url, the home method is called
                 "": "index",
                 "modals":"modals",
+                "progress":"progress",
                 "friends":"friends",
                 "myGoal":"myGoal",
 				"addGoal":"addGoal",
@@ -38,6 +39,9 @@ define(["jquery", "backbone", "views/BaseView","views/ModalsView", "views/Friend
             },
             modals: function() {
                 this.changePage(new ModalsView());
+            },
+            progress: function() {
+                this.changePage(new ProgressView());
             },
             friends: function() {
                 this.changePage(new FriendsView());

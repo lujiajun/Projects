@@ -223,9 +223,8 @@ hr {
 
 .setting #logout {
 	color: #B5C7D6;
-	width: 93vw; height:50px; 
-	padding-top: 1em; 
-	margin-left: 1em;
+	padding: 1em 0; 
+	margin:0 1em;
 	border-bottom-width:1px; border-bottom-color: #A5BFD1; border-bottom-style: solid;
 	border-top-width:1px;   border-top-color: #A5BFD1; border-top-style: solid;
 }
@@ -242,3 +241,14 @@ margin-left:30px; padding: 1em 0; font-size:0.8em;
 /*FriendsView */
 
 .importFrom {height: 70px; font-size: 0.8em}
+
+.FriendsProgress .row {margin: 10px 20px}
+.FriendsProgress .col-xs-5 {background-color:skyblue; height:1.5em; width:70%}
+
+.invite {	
+	color: yellow;
+	padding: 0.7em 0; 
+	margin:2.5em 0.7em;
+	border-bottom-width:1px; border-bottom-color: yellow; border-bottom-style: solid;
+	border-top-width:1px;   border-top-color: yellow; border-top-style: solid;
+}
