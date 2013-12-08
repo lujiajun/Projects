@@ -147,14 +147,14 @@ hr {
 .middleBar p {color:white; font-size:0.8em; padding-top:1em;}
 
 .borderbox {color:white; font-size: 0.8em; border-style: solid; 
-	border-color: white; color:gray; margin:10px 43px; height:2.5em;}
+	border-color: white; color:gray; margin:10px 43px; height:2.5em; border-width: 2px}
 
 .borderbox p { color:white; padding: 0.5em 0}
 
-.borderbox-tall {color:white; font-size: 0.8em; border-style: solid; 
-	border-color: white; color:gray; margin:20px 43px; height:4em;}
+.borderbox-tall {color:white; font-size: 1em; border-style: solid; 
+	border-color: white; color:gray; margin:13px 43px; height:3em; border-width: 2px}
 
-.borderbox-tall p { color:white; padding: 0.9em 0 }
+.borderbox-tall p { color:white; padding: 0.7em 0;}
 
 
 /*
@@ -247,15 +247,15 @@ margin-left:30px; padding: 1em 0; font-size:0.8em;
 .importFrom {height: 70px; font-size: 0.8em}
 
 .FriendsProgress .row {margin: 10px 20px}
-.FriendsProgress .col-xs-5 {background-color:skyblue; height:1.5em;}
+.FriendsProgress .col-xs-5 {background-color:#A5BFD1; height:1.5em;}
 
 .yellowBorder {	
 	text-align: center;
-	color: yellow;
+	color: #FFBB40;
 	padding: 1em 0; 
 	margin:2.5em 1em;
-	border-bottom-width:1px; border-bottom-color: yellow; border-bottom-style: solid;
-	border-top-width:1px;   border-top-color: yellow; border-top-style: solid;
+	border-bottom-width:1px; border-bottom-color: #FFBB40; border-bottom-style: solid;
+	border-top-width:1px;   border-top-color: #FFBB40; border-top-style: solid;
 }
 
 .weekEvents hr {
