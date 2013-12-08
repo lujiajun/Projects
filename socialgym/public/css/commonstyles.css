@@ -149,6 +149,13 @@ hr {
 	border-color: white; color:gray; margin:10px 43px; height:2.5em;}
 
 .borderbox p { color:white; padding: 0.5em 0}
+
+.borderbox-tall {color:white; font-size: 0.8em; border-style: solid; 
+	border-color: white; color:gray; margin:20px 43px; height:4em;}
+
+.borderbox-tall p { color:white; padding: 0.9em 0 }
+
+
 /*
 	search feature
 */
