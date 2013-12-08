@@ -241,15 +241,16 @@ margin-left:30px; padding: 1em 0; font-size:0.8em;
 
 /*FriendsView */
 
-.importFrom {height: 55px;}
+.importFrom {height: 70px; font-size: 0.8em}
 
 .FriendsProgress .row {margin: 10px 20px}
-.FriendsProgress .col-xs-5 {background-color:skyblue; height:1.5em; width:70%}
+.FriendsProgress .col-xs-5 {background-color:skyblue; height:1.5em;}
 
-.invite {	
+.yellowBorder {	
+	text-align: center;
 	color: yellow;
-	padding: 0.7em 0; 
-	margin:2.5em 0.7em;
+	padding: 1em 0; 
+	margin:2.5em 1em;
 	border-bottom-width:1px; border-bottom-color: yellow; border-bottom-style: solid;
 	border-top-width:1px;   border-top-color: yellow; border-top-style: solid;
 }
@@ -258,3 +259,9 @@ margin-left:30px; padding: 1em 0; font-size:0.8em;
 	margin: 15px;
 	border-top: 2px solid #A5BFD1;
 }
+
+.CreateEvent .row {margin: 10px 20px}
+.CreateEvent .col-xs-1 {text-align:center; border-bottom-width:2px; border-bottom-color: white; border-bottom-style: solid;
+ 	height:1.5em; margin-right:3px; width:5%; padding:0;}
+.CreateEvent .col-xs-5 {padding-left:0; border-bottom-width:2px; border-bottom-color: white; border-bottom-style: solid;
+ 	height:1.5em; }

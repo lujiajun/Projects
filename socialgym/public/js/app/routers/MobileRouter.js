@@ -1,8 +1,8 @@
 // MobileRouter.js
 // ---------------
-define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
+define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/ProgressView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView"],
         
-    function($, Backbone, BaseView, ProgressView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
+    function($, Backbone, BaseView, CreateEventView, ProgressView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView) {
 
         var MobileRouter = Backbone.Router.extend({
 
@@ -19,15 +19,16 @@ define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/Modal
                 // When there is no hash bang on the url, the home method is called
                 "": "index",
                 "modals":"modals",
+                "createEvent":"createEvent",
                 "progress":"progress",
                 "friends":"friends",
                 "myGoal":"myGoal",
-				"addGoal":"addGoal",
-				"addProgress":"addProgress",
+                "addGoal":"addGoal",
+                "addProgress":"addProgress",
                 "detail":"detail",
                 "community":"community",
                 "events":"events",
-				"settings":"settings",
+                "settings":"settings",
                 "activity":"activity"
             },
 
@@ -40,6 +41,9 @@ define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/Modal
             modals: function() {
                 this.changePage(new ModalsView());
             },
+            createEvent: function() {
+                this.changePage(new CreateEventView());
+            },
             progress: function() {
                 this.changePage(new ProgressView());
             },
@@ -49,10 +53,10 @@ define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/Modal
             myGoal: function() {
                 this.changePage(new MyGoalView());
             },
-			addGoal: function() {
+            addGoal: function() {
                 this.changePage(new AddGoalView());
             },
-			addProgress: function() {
+            addProgress: function() {
                 this.changePage(new AddProgressView());
             },
             detail: function() {
@@ -64,7 +68,7 @@ define(["jquery", "backbone", "views/BaseView","views/ProgressView","views/Modal
             events: function() {
                 this.changePage(new EventsView());
             },
-			settings: function() {
+            settings: function() {
                 this.changePage(new SettingsView());
             },
             activity: function() {
