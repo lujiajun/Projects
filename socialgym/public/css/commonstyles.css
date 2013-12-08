@@ -218,9 +218,12 @@ hr {
 	color: #B5C7D6;
 	width: 80vw; height:50px; 
 	padding-top: 1em; 
+	margin-bottom: 1em;
 	margin-left: 3em; 
 	border-bottom-width:1px;   border-bottom-color: #A5BFD1;    border-bottom-style: solid;
 }
+
+.filledButton {background-color: #B5C7D6; color:#638AA5; padding: 1em 0;  height:50px;  margin:1em; text-align: center;}
 
 .setting #logout {
 	color: #B5C7D6;
