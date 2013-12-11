@@ -14,6 +14,9 @@ define(["jquery", "backbone", "models/Model", "text!templates/friends.html"],
 
             // View Event Handlers
             events: {
+				"click #goal":"goal",
+				"click #community":"community",
+				"click #event":"event",
 
             },
 
@@ -29,7 +32,18 @@ define(["jquery", "backbone", "models/Model", "text!templates/friends.html"],
                 // Maintains chainability
                 return this;
 
-            }
+            },
+			goal:function(){
+				location.href="#myGoal";
+			},
+
+			community:function(){
+				location.href="#community";
+			},
+
+			event:function(){
+				location.href="#events";
+			}
 
         });
 

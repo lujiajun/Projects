@@ -17,7 +17,8 @@ define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/Pr
             routes: {
                 
                 // When there is no hash bang on the url, the home method is called
-                "": "index",
+                "": "myGoal",
+				"index":"myGoal",
                 "modals":"modals",
                 "createEvent":"createEvent",
                 "progress":"progress",

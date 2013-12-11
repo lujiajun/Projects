@@ -14,7 +14,9 @@ define(["jquery", "backbone", "models/Model", "text!templates/friendsProgress.ht
 
             // View Event Handlers
             events: {
-
+				"click #goal":"goal",
+				"click #community":"community",
+				"click #event":"event",
             },
 
             // Renders the view's template to the UI
@@ -29,8 +31,18 @@ define(["jquery", "backbone", "models/Model", "text!templates/friendsProgress.ht
                 // Maintains chainability
                 return this;
 
-            }
+            },
+			goal:function(){
+				location.href="#myGoal";
+			},
 
+			community:function(){
+				location.href="#community";
+			},
+
+			event:function(){
+				location.href="#events";
+			}
         });
 
         // Returns the View class
