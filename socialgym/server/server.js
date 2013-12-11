@@ -1,34 +1,28 @@
-// DEPENDENCIES
-// ============
-var express = require("express"),
-    http = require("http"),
-    port = (process.env.PORT || 8001),
-    server = module.exports = express();
+var http = require("http");
+var url = require('url');
+var cradle = require('cradle');
 
-// SERVER CONFIGURATION
-// ====================
-server.configure(function() {
+function start(route, handle) {
+    function onRequest(request, response) {
+	var pathname = url.parse(request.url).pathname;
+	console.log("Request for " + pathname + "received.");
+	route(handle, pathname, response, request);
+    }
 
-  server.use(express["static"](__dirname + "/../public"));
+    var db = new(cradle.Connection)().database('starwars');
+    db.exists(function (err, exists) {
+	if (err) {
+	    console.log('error', err);
+	} else if (exists) {
+	    console.log('the force is with you.');
+	} else {
+	    console.log('database "starwars" does not exists');
+	    db.create();
+	}
+    });
+    
+    http.createServer(onRequest).listen(8080);
+    console.log("Server has started.");
+}
 
-  server.use(express.errorHandler({
-
-    dumpExceptions: true,
-
-    showStack: true
-
-  }));
-
-  server.use(express.bodyParser())
-
-  server.use(server.router);
-
-});
-
-// SERVER
-// ======
-
-// Start Node.js Server
-http.createServer(server).listen(port);
-
-console.log('Welcome to Backbone-Require-Boilerplate!\n\nPlease go to http://localhost:' + port + ' to start using Require.js and Backbone.js');
+exports.start = start;
