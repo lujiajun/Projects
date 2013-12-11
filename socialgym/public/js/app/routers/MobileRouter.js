@@ -7,7 +7,7 @@ define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/Pr
         var MobileRouter = Backbone.Router.extend({
 
             initialize: function() {
-
+                this.globalEvents();
                 // Tells Backbone to start watching for hashchange events
                 Backbone.history.start();
 
@@ -17,7 +17,8 @@ define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/Pr
             routes: {
                 
                 // When there is no hash bang on the url, the home method is called
-                "": "index",
+                "": "myGoal",
+                "index": "myGoal",
                 "modals":"modals",
                 "createEvent":"createEvent",
                 "progress":"progress",
@@ -32,7 +33,8 @@ define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/Pr
                 "settings":"settings",
                 "activity":"activity"
             },
-
+            globalEvents: function() {
+            },
             index: function() {
 
                 // Instantiates a new view which will render the header text to the page

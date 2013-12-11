@@ -1,4 +1,15 @@
 /*
+	General Override
+*/
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/*
 	navigation bar fixes
 */
 .navbar-fixed-bottom {
