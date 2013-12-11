@@ -7,7 +7,6 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
         var View = Backbone.View.extend({
             // View constructor
             initialize: function() {
-
                 // Calls the view's render method
                 this.render();
             },
