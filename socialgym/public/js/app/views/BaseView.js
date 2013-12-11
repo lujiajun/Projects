@@ -30,7 +30,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/base_frame.html"],
                 return this;
 
             }
-
+ 
         });
 
         // Returns the View class

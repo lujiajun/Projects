@@ -32,7 +32,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/goalMenu.html"],
             }
 
         });
-
+ 
         // Returns the View class
         return View;
 

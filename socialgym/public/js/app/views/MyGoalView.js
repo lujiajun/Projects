@@ -34,7 +34,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
 
         // Returns the View class
         return View;
-
+ 
     }
 
 );

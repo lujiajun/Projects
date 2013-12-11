@@ -34,7 +34,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
                 console.log(e);
                 // location.href = "#event" + e.currentTarget.id;
             }
-
+ 
         });
 
         // Returns the View class

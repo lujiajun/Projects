@@ -35,7 +35,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/friendsProgress.ht
 
         // Returns the View class
         return View;
-
+ 
     }
 
 );
