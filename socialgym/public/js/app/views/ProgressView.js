@@ -1,6 +1,6 @@
-// EventsView.js
+// ProgressView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/friendsProgress.html"],
 
     function($, Backbone, Model, template){
 

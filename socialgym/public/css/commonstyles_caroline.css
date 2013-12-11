@@ -1,7 +1,8 @@
 /*
 	navigation bar fixes
 */
-.navbar-fixed-bottom {
+
+.navbar-fixeda-bottom {
 	border-width: 0 0 0px;
 }
 
@@ -62,7 +63,7 @@ body {
 
 section.content {
 	margin-top: 50px;
-	margin-bottom: 58px;
+	margin-bottom: 60px;
 	overflow: hidden;
 	background-color: #638AA5;
 }
@@ -86,9 +87,6 @@ hr {
 	border-top: 1px solid #A5BFD1;
 }
 
-
-
-
 /*
 	My Goals View
 */
@@ -100,22 +98,21 @@ hr {
 	margin-top: 50px;
 }
 
+.square {
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+	position:relative;
+}
 
 .col-xs-3 {
 	padding-left: 5px;	
 	padding-right: 5px;
 }
 
-.square {
-	width: 100%;
-	height: 100px;
-	position:relative;
-}
-
-
 .square:hover {	background: #204C6B;}
 
-.square p { padding-top:32px; text-align: center;}
+.square p {position:absolute; padding-top:32px; padding-left: 10px;}
 
 
 .goal-desc {
@@ -147,16 +144,9 @@ hr {
 .middleBar p {color:white; font-size:0.8em; padding-top:1em;}
 
 .borderbox {color:white; font-size: 0.8em; border-style: solid; 
-	border-color: white; color:gray; margin:10px 43px; height:2.5em; border-width: 2px}
+	border-color: white; color:gray; margin:10px 43px; height:2.5em;}
 
 .borderbox p { color:white; padding: 0.5em 0}
-
-.borderbox-tall {color:white; font-size: 1em; border-style: solid; 
-	border-color: white; color:gray; margin:13px 43px; height:3em; border-width: 2px}
-
-.borderbox-tall p { color:white; padding: 0.7em 0;}
-
-
 /*
 	search feature
 */
@@ -194,6 +184,7 @@ hr {
 
 .newscard {
 	padding: 0.5em 0.5em;
+	background-color: #ccc;
 }
 
 .newscard .info {
@@ -218,17 +209,15 @@ hr {
 	color: #B5C7D6;
 	width: 80vw; height:50px; 
 	padding-top: 1em; 
-	margin-bottom: 1em;
 	margin-left: 3em; 
 	border-bottom-width:1px;   border-bottom-color: #A5BFD1;    border-bottom-style: solid;
 }
 
-.filledButton {background-color: #B5C7D6; color:#638AA5; padding: 1em 0;  height:50px;  margin:1em; text-align: center;}
-
 .setting #logout {
 	color: #B5C7D6;
-	padding: 1em 0; 
-	margin:0 1em;
+	width: 93vw; height:50px; 
+	padding-top: 1em; 
+	margin-left: 1em;
 	border-bottom-width:1px; border-bottom-color: #A5BFD1; border-bottom-style: solid;
 	border-top-width:1px;   border-top-color: #A5BFD1; border-top-style: solid;
 }
@@ -238,33 +227,10 @@ hr {
 }
 
 /* Events - detail*/
-.date {border-width:1px; border-style:solid;
-margin-left:30px; padding: 1em 0; font-size:0.8em;
+.date {
+	border-width:1px; 
+	border-style:solid;
+	margin-left:30px; 
+	padding: 1em 0px 0px 0px; 
+	font-size: 0.7em;
 }
-
-/*FriendsView */
-
-.importFrom {height: 70px; font-size: 0.8em}
-
-.FriendsProgress .row {margin: 10px 20px}
-.FriendsProgress .col-xs-5 {background-color:#A5BFD1; height:1.5em;}
-
-.yellowBorder {	
-	text-align: center;
-	color: #FFBB40;
-	padding: 1em 0; 
-	margin:2.5em 1em;
-	border-bottom-width:1px; border-bottom-color: #FFBB40; border-bottom-style: solid;
-	border-top-width:1px;   border-top-color: #FFBB40; border-top-style: solid;
-}
-
-.weekEvents hr {
-	margin: 15px;
-	border-top: 1px solid #A5BFD1;
-}
-
-.CreateEvent .row {margin: 10px 20px}
-.CreateEvent .col-xs-1 {text-align:center; border-bottom-width:2px; border-bottom-color: white; border-bottom-style: solid;
- 	height:1.5em; margin-right:3px; width:5%; padding:0;}
-.CreateEvent .col-xs-5 {padding-left:0; border-bottom-width:2px; border-bottom-color: white; border-bottom-style: solid;
- 	height:1.5em; }

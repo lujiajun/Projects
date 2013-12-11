@@ -1,6 +1,6 @@
-// EventsView.js
+// CreateEventView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/createEvent.html"],
 
     function($, Backbone, Model, template){
 

@@ -1,6 +1,6 @@
-// EventsView.js
+// DetailView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/detail.html"],
 
     function($, Backbone, Model, template){
 

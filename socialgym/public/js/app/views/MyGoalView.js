@@ -1,4 +1,4 @@
-// View.js
+// MyGoalView.js
 // -------
 define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
 

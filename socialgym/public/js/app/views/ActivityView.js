@@ -1,6 +1,6 @@
-// EventsView.js
+// ActivityView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/activity.html"],
 
     function($, Backbone, Model, template){
 

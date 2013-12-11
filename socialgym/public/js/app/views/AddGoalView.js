@@ -1,6 +1,6 @@
-// EventsView.js
+// AddGoalView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/addGoal.html"],
 
     function($, Backbone, Model, template){
 
