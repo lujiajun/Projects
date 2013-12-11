@@ -14,7 +14,7 @@ define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
 
             // View Event Handlers
             events: {
-
+                "click #test": "test"
             },
 
             // Renders the view's template to the UI
@@ -29,6 +29,10 @@ define(["jquery", "backbone", "models/Model", "text!templates/events.html"],
                 // Maintains chainability
                 return this;
 
+            },
+            test: function(e) {
+                console.log(e);
+                // location.href = "#event" + e.currentTarget.id;
             }
 
         });
