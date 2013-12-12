@@ -21,6 +21,7 @@ require.config({
 
       "backbone": "../libs/backbone",
 
+
       // Plugins
       // -------
       "backbone.validateAll": "../libs/plugins/Backbone.validateAll",
@@ -29,7 +30,9 @@ require.config({
 
       "text": "../libs/plugins/text",
 
-      "jasminejquery": "../libs/plugins/jasmine-jquery"
+      "jasminejquery": "../libs/plugins/jasmine-jquery",
+
+	  "backbone.modal": "../libs/backbone.modal",
 
   },
 
@@ -59,6 +62,7 @@ require.config({
       // Backbone.validateAll plugin that depends on Backbone
       "backbone.validateAll": ["backbone"],
 
+	  "backbone.modal": ["backbone"],
       // Jasmine-jQuery plugin
       "jasminejquery": ["jquery"]
 

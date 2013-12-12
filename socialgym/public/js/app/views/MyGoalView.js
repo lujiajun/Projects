@@ -1,8 +1,8 @@
 // MyGoalView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/goals.html", "views/AddGoalView","backbone.modal","bootstrap"],
 
-    function($, Backbone, Model, template){
+    function($, Backbone, Model, template, AddGoalView){
 
         var View = Backbone.View.extend({
             // View constructor
@@ -13,8 +13,10 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
 
             // View Event Handlers
             events: {
-
+				"click #new-goal":"newGoal"
             },
+
+
 
             // Renders the view's template to the UI
             render: function() {
@@ -28,7 +30,18 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html"],
                 // Maintains chainability
                 return this;
 
-            }
+            },
+		
+			
+			
+			newGoal: function(){
+		        // console.log("Click for detail");
+		       var modalView = new AddGoalView();
+		       $("#fillin").html(modalView.render().el);
+				 $('#myModal').modal('show');
+		    }
+			
+				
 
         });
 
