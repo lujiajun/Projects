@@ -1,13 +1,14 @@
 // MobileRouter.js
 // ---------------
-define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/ProgressView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView", "views/DetailEventView"],
+define(["jquery", "backbone", "views/BaseView","views/CreateEventView","views/ProgressView","views/ModalsView", "views/FriendsView", "views/MyGoalView", "views/AddGoalView", "views/AddProgressView", "views/DetailView", "views/CommunityView", "views/EventsView", "views/SettingsView", "views/ActivityView", "views/DetailEventView", "collections/GoalList"],
         
-    function($, Backbone, BaseView, CreateEventView, ProgressView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView, DetailEventView) {
+    function($, Backbone, BaseView, CreateEventView, ProgressView, ModalsView, FriendsView, MyGoalView, AddGoalView, AddProgressView, DetailView, CommunityView, EventsView, SettingsView, ActivityView, DetailEventView, GoalList) {
 
         var MobileRouter = Backbone.Router.extend({
 
             initialize: function() {
-                this.globalEvents();
+                this.goalList = new GoalList();
+                this.goalList.fetch();
                 // Tells Backbone to start watching for hashchange events
                 Backbone.history.start();
 
