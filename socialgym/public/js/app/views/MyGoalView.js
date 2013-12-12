@@ -1,8 +1,8 @@
 // MyGoalView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/goals.html", "views/AddGoalView","backbone.modal","bootstrap"],
+define(["jquery", "backbone", "models/Model", "text!templates/goals.html", "views/AddGoalView","views/AddProgressView","backbone.modal","bootstrap"],
 
-    function($, Backbone, Model, template, AddGoalView){
+    function($, Backbone, Model, template, AddGoalView,AddProgressView){
 
         var View = Backbone.View.extend({
             // View constructor
@@ -13,7 +13,8 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html", "view
 
             // View Event Handlers
             events: {
-				"click #new-goal":"newGoal"
+				"click #new-goal":"newGoal",
+				"click #add-progress":"newProgress"
             },
 
 
@@ -37,11 +38,17 @@ define(["jquery", "backbone", "models/Model", "text!templates/goals.html", "view
 			newGoal: function(){
 		        // console.log("Click for detail");
 		       var modalView = new AddGoalView();
-		       $("#fillin").html(modalView.render().el);
+		       $("#addgoal").html(modalView.render().el);
 				 $('#myModal').modal('show');
-		    }
+		    },
 			
-				
+			newProgress: function(){
+		       
+		       var modalView = new AddProgressView();
+		       $("#addprogress").html(modalView.render().el);
+				 $('#myModal2').modal('show');
+		    }
+		
 
         });
 

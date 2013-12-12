@@ -1,13 +1,12 @@
 // AddProgressView.js
 // -------
-define(["jquery", "backbone", "models/Model", "text!templates/addProgress.html"],
+define(["jquery", "backbone", "models/Model", "text!templates/addProgress.html","backbone.modal"],
 
     function($, Backbone, Model, template){
 
-        var View = Backbone.View.extend({
+        var test = Backbone.Modal.extend({
             // View constructor
             initialize: function() {
-
                 // Calls the view's render method
                 this.render();
             },
@@ -32,9 +31,24 @@ define(["jquery", "backbone", "models/Model", "text!templates/addProgress.html"]
             }
  
         });
-
-        // Returns the View class
-        return View;
+		
+		
+		
+		var InfoModal = Backbone.Modal.extend({
+				initialize: function() {
+					console.log("haha");
+				},
+		    	template: _.template(template),
+		    	events: {
+		   			
+		    	},
+		   
+		  });
+		
+		
+		
+        // Returns the Modal class
+        return InfoModal;
 
     }
 

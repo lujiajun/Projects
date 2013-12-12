@@ -1,35 +1,46 @@
-<section style="background-color:black">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<div>
-		<div class="addGoal" style="margin:50px 0 10px 0;height:50%;">
-			<div class="topPanel">
-				<div class="row" style="margin: 0 30px; padding: 1em;">
-					<div class="col-xs-4" style="width:20%"><i class="fa fa-times fa-lg"></i></div>
-					<div class="col-xs-4 center" style="width:60% "><font face="verdana">Add Progress</font></div>
-					<div class="col-xs-4 right" style="width:20%"><i class="fa fa-check-circle fa-lg" style="color: #FFBB40"></i></div>
+<style>
+.modal-word {
+ color : black;
+
+}
+</style>
+
+<div id="myModal2"  class="modal fade" role="dialog">
+      <div class="modal-dialog" >
+        <div class="modal-content" >
+
+          <div class="modal-header" style="background:#536086">
+            <h4 class="modal-title title" align="center" id="myModalLabel"><span class="glyphicon glyphicon-flag"></span>&nbsp;Add Progress</h4>
+          </div>
+          <div class="modal-body">
+		  
+	     	<h5 class="modal-word"><span class="glyphicon glyphicon-pencil"></span>&nbsp;What have you done?</h5>
+	        <textarea id="input-goal" class="form-control" rows="1" placeholder="e.g. 50 push ups."></textarea>
+       	  
+						
+			<hr> 	
+			
+			<div class="Suggestions" style="style="margin:0 30px; padding-top: 50px; height:50%>
+				<h4 style="color:grey">Recent Progress...</h4>
+				<div class="borderbox center">
+					<p><font face="verdana">15 PUSH UPS</font></p>
 				</div>
-			</div>
-			<div class="textbox" style="background-color:white; color:gray; margin:0 43px; height: 100px; padding: 5px 5px 5px 10px;">
-				<span style="color: lightgray"><font face="verdana">What did you do? e.g. 50 push ups.</font></span>
-			</div>
-			<div class="right"  style="margin:10px 45px 0px 0px">
-				<i class="fa fa-camera fa-lg"></i>
-			</div>
-		</div>
-		<div class="Suggestions" style="style="margin:0 30px; padding-bottom: 50px; height:50%>
-			<div class="center" style="color:white"><font face="verdana">Recent Progress</font></div>
-			<div class="borderbox center">
-				<p><font face="verdana">15 PUSH UPS</font></p>
-			</div>
-			<div class="borderbox center">
-				<p><font face="verdana">14 PUSH UPS</font></p>
-			</div>
-			<div class="borderbox center">
-				<p><font face="verdana">35 PUSH UPS</font></p>
-			</div>
+				<div class="borderbox center">
+					<p><font face="verdana">14 PUSH UPS</font></p>
+				</div>
+				<div class="borderbox center">
+					<p><font face="verdana">35 PUSH UPS</font></p>
+				</div>
+				
+				</div>  
 
 		</div>
-	</div>
-	<div class="center" style="height:210px; background-color:white; color:black"><font face="verdana">This is where the keyboard is</font></div>
-</section>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
  
