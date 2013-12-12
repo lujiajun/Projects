@@ -9,14 +9,14 @@ function start(route, handle) {
 	route(handle, pathname, response, request);
     }
 
-    var db = new(cradle.Connection)().database('starwars');
+    var db = new(cradle.Connection)().database('socialgym');
     db.exists(function (err, exists) {
 	if (err) {
 	    console.log('error', err);
 	} else if (exists) {
 	    console.log('the force is with you.');
 	} else {
-	    console.log('database "starwars" does not exists');
+	    console.log('database "socialgym" does not exists');
 	    db.create();
 	}
     });

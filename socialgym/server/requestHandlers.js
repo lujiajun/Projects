@@ -18,15 +18,16 @@ function put(response, request) {
 function get(response, request) {
     console.log("Request handler 'get' was called.");
     var query = url.parse(request.url, true).query;
+    console.log(query);
     
-    var db = new(cradle.Connection)().database('starwars');
+    var db = new(cradle.Connection)().database('socialgym');
     db.get(query.key, function(error, doc) {
 	if (error) {
 	    response.writeHead(500, {"Content-Type": "text/plain"});
 	    response.write('Document Key "' + query.key + '" Not Found.\n');
 	    response.end();
 	} else {
-	    response.writeHead(200, {"Content-Type": "text/plain"});
+	    response.writeHead(200, {"Content-Type": "text/json"});
 	    response.write(doc + '\n');
 	    response.end();
 	}
